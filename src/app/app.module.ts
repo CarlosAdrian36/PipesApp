@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
 import { VentasModule } from './ventas/ventas.module';
 
+//Cambiar el locale de la app
 
 
 @NgModule({

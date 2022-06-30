@@ -10,12 +10,24 @@
 </div>
 <div class="grid">
     <div class="col-4">
-        <p-card header="uppercase"></p-card>
+        <p-card
+        header="uppercase"
+        [subheader]="nomberLower | uppercase">
+        {{ nomberLower | uppercase}}
+    </p-card>
     </div>
     <div class="col-4">
-        2
+        <p-card
+        header="Lowercase"
+        [subheader]="nomberLower | lowercase ">
+        {{ nomberLower | lowercase}}
+    </p-card>
     </div>
     <div class="col-4">
-        3
+        <p-card
+        header="titlecase"
+        [subheader]="nombreCompleto  | titlecase">
+        {{ nombreCompleto | titlecase }}
+    </p-card>
     </div>
 </div>

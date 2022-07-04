@@ -46,7 +46,7 @@
 
 <div class="grid">
     <div class="col mt-2">
-        <p-table [value]="heroes" responsiveLayout="scroll">
+        <p-table [value]="heroes | ordenar">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Nombre</th>

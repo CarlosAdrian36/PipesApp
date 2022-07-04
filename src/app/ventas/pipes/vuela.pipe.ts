@@ -1,13 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-    name: 'v'
+    name: 'vuela'
 })
 
 
 export class Vuela implements PipeTransform {
 
-    transform(value: any, ...args: any[]) {
-        return true ? 'vuela': 'no vuela'
+    transform(value:boolean): string {
+        return (value) ? 'vuela' : 'no vuela';
+        
     }
 }
